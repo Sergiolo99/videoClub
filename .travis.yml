@@ -6,7 +6,7 @@ jdk:
 services: 
   - mysql
 before_script:
-- mysql -u root -e "DROP SCHEMA IF EXISTS videoClub;"
+- mysql -u root -e "DROP SCHEMA IF EXISTS videoClubbd;"
 - mysql -u root -e "DROP USER IF EXISTS 'root'@'localhost';"
 - mysql -u root -e "CREATE SCHEMA videoClub;"
 - mysql -u root -e "CREATE USER IF NOT EXISTS 'root'@'localhost' IDENTIFIED BY 'root';"
