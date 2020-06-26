@@ -6,11 +6,11 @@ jdk:
 services: 
   - mysql
 before_script:
-- mysql -u root -e "DROP SCHEMA IF EXISTS videoClubbd;"
+- mysql -u root -e "DROP SCHEMA IF EXISTS videoclubbd;"
 - mysql -u root -e "DROP USER IF EXISTS 'root'@'localhost';"
 - mysql -u root -e "CREATE SCHEMA videoclubbd;"
 - mysql -u root -e "CREATE USER IF NOT EXISTS 'root'@'localhost' IDENTIFIED BY 'root';"
-- mysql -u root -e "GRANT ALL ON videoClubbd.* TO 'spq'@'localhost';"
+- mysql -u root -e "GRANT ALL ON videoclubbd.* TO 'spq'@'localhost';"
 
 script:
  - mvn clean compile
