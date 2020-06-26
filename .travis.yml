@@ -6,4 +6,4 @@ services:
 before_script:
   - mysql -u root -e 'CREATE DATABASE videoclubd;'
   - mysql -u root -e "CREATE USER 'spq'@'localhost' IDENTIFIED BY 'spq';"
-  - mysql -u root -e "GRANT ALL ON productsDB.* TO 'spq'@'localhost';"
+  - mysql -u root -e "GRANT ALL ON videoclubbd.* TO 'spq'@'localhost';"
